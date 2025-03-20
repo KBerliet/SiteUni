@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(60deg, #010161, #4f46e5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.logo {
+  max-width: 250px;
+  height: auto;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  width: 400px;
+  background: #050049;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+}
+
+.center h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.center form {
+  display: flex;
+  flex-direction: column;
+}
+
+form .txt_field {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.txt_field input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  outline: none;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.txt_field input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.txt_field label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label {
+  top: -10px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.pass {
+  margin: -10px 0 20px;
+  color: #cbd5e1;
+  font-size: 14px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.pass:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #2563eb, #4f46e5);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.signup_link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.signup_link a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup_link a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
